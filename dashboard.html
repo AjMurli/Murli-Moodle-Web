@@ -111,8 +111,6 @@
             }
 
             footer {
-                /* width: 100vw; */
-                /* height: 23vh; */
                 border: 3px solid var(--border);
                 margin-top: 5rem;
                 background: var(--background);
@@ -181,7 +179,8 @@
                 <div class="m1"> <i class="fa-solid fa-bell"></i></div>
                 <div class="m1"> <i class="fa-solid fa-message"></i></div>
                 <div class="m1"><i class="fa-solid fa-circle-user"></i></div>
-                <div class="icons m1"> <img src="/pics/moon.png" alt="" id="icon"></div>
+                <div class="icons m1"> <img src="/pics/moon.png" alt="hello" id="icon"></div>
+
                 <div class="m1"> <a href="/"><i class="fa-solid fa-right-from-bracket logout"></i></a>
                 </div>
             </div>
@@ -418,24 +417,24 @@
     <footer>
 
         <div class="ft">
-            <div>You are logged in as <a href="">770_Murlidhar Palav </a> <a href="">(Log Out)</a> </div>
+            <div>You are logged in as 770_Murlidhar Palav <a href="/index.html">(Log Out)</a> </div>
             <div><a href=""> Reset user tour on this page</a></div>
             <div><a href=""> Home </a></div>
             <div><a href=""> Data retention summary</a></div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT SECTION START -->
-    <script>
+     <!-- JAVASCRIPT SECTION START -->
+     <script>
         var icon = document.getElementById("icon");
 
         icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
             if (document.body.classList.contains("dark-theme")) {
-                icon.src = "/static/pics/sun.png";
+                icon.src = "/pics/sun.png";
             }
             else {
-                icon.src = "/static/pics/moon.png";
+                icon.src = "/pics/moon.png";
             }
         }
     </script>

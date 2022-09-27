@@ -20,9 +20,10 @@
 </head>
 
 <style>
-	:root{
-		--backgroundColor:#03195c;
+	:root {
+		--backgroundColor: #03195c;
 	}
+
 	* {
 		box-sizing: border-box;
 		font-family: 'Arvo', serif;
@@ -47,7 +48,7 @@
 
 	.moodle-div {
 		width: 469px;
-    height: 568px;
+		height: 568px;
 		padding: 20px 35px 15px 35px;
 		border-radius: 35px;
 		background: #ecf0f3;
@@ -143,8 +144,9 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.moodle-button:hover{
-		background-color:#04164f ;
+
+	.moodle-button:hover {
+		background-color: #04164f;
 	}
 
 	.moodle-link {
@@ -158,13 +160,13 @@
 	}
 
 	span {
-	 color:var(--backgroundColor) ;
+		color: var(--backgroundColor);
 		cursor: pointer;
 
 	}
 
 	span:hover {
-		color:#032382 ;
+		color: #032382;
 
 	}
 
@@ -193,19 +195,48 @@
 	.fa-solid {
 		padding-left: 1rem;
 	}
-	.username{
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	margin-top: 1rem;
+
+	.username {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
 	}
-	.username a{
+
+	.username a {
 		text-decoration: none;
 		color: #0a2d95;
 	}
-	.re{
+
+	.re {
 		margin-bottom: 1rem;
+	}
+
+	@media screen and (max-width: 500px) {
+		.moodle-input-fields input {
+			border: none;
+			outline: none;
+			font-size: .5rem;
+			background: none;
+			color: #555;
+			padding: 15px 10px 15px 5px;
+		}
+
+		.moodle-div {
+			font-size: .8rem;
+			margin: 1rem;
+			height: auto;
+			padding: 20px 35px 15px 35px;
+			border-radius: 35px;
+			background: #ecf0f3;
+			box-shadow: -6px -6px 6px rgb(255 255 255 / 80%), 6px 6px 6px rgb(0 0 0 / 20%);
+		}
+
+		.moodle-button {
+			width: auto;
+			height: 3rem;
+		}
 	}
 </style>
 </head>
@@ -228,7 +259,7 @@
 		<a href="/dashboard.html" class="moodle-button">Login</a>
 
 		<div class="username">
-			<span>  <a href="register.html">Log in as a Guest</a></span>
+			<span> <a href="register.html">Log in as a Guest</a></span>
 		</div>
 		<div class="moodle-link"><a href="/register.html">Is this your first time here?<span> Sign Up</span></a></div>
 	</div>
